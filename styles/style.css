@@ -185,22 +185,39 @@ a {
   margin: 0 auto; }
 
 header {
+  background-color: #bbbbbb;
   min-height: 100vh;
-  background-color: #bbbbbb; }
+  position: relative;
+  overflow: hidden; }
+
+.headerBackground {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#bbbbbb));
+  background-image: -webkit-linear-gradient(#bbbbbb);
+  background-image: -o-linear-gradient(#bbbbbb);
+  background-image: linear-gradient(#bbbbbb);
+  -webkit-transform: skewY(-6deg);
+  -ms-transform: skewY(-6deg);
+  transform: skewY(-6deg);
+  -webkit-transform-origin: top left;
+  -ms-transform-origin: top left;
+  transform-origin: top left; }
 
 header h2 {
   font-size: 4.5rem;
   line-height: 56px;
   text-align: center;
-  font-weight: 700; }
-
-header h3 {
-  font-size: 4.5rem;
   font-weight: 700;
-  text-align: center; }
+  padding: 10px 0; }
 
-.introduction:last-child {
-  font-weight: 400; }
+.introduction h2:last-child {
+  font-weight: 300; }
 
 .navigationContainer {
   display: -webkit-box;
@@ -225,7 +242,7 @@ header h3 {
   padding: 100px 0; }
   .social .followMe h4 {
     font-size: 2.4rem;
-    margin-right: 15px;
+    margin-right: 30px;
     font-weight: 300; }
 
 .socialIcons {
@@ -240,8 +257,9 @@ header h3 {
       font-size: 2.4rem; }
 
 .skills {
-  background: #e6e6e6;
-  min-height: 100vh; }
+  background: rgba(42, 42, 42, 0.7);
+  color: #e6e6e6;
+  min-height: 50vh; }
   .skills .skillsContainer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -257,3 +275,11 @@ header h3 {
     .skills .skillsContainer i {
       font-size: 10rem;
       margin: 50px 100px; }
+
+.skills h3 {
+  padding-top: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-transform: translateX(20deg);
+  -ms-transform: translateX(20deg);
+  transform: translateX(20deg); }

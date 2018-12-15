@@ -1,6 +1,7 @@
 .skills {
-    background: $offWhite;
-    min-height: 100vh;
+    background:  rgba(42, 42, 42, 0.7);
+    color: $offWhite;
+    min-height: 50vh;
    .skillsContainer {
        display: flex;
        flex: 1 0 auto; 
@@ -12,4 +13,13 @@
        }
    }
 }
+
+.skills h3 {
+    padding-top: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    transform: translateX(20deg);
+}
+
+
 
