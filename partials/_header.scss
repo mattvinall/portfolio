@@ -12,7 +12,12 @@ header h2 {
 
 header h3 {
     font-size: 4.5rem;
+    font-weight: 700;
     text-align: center;
+}
+
+.introduction:last-child {
+    font-weight: 400;
 }
 
 .navigationContainer {
@@ -21,5 +26,28 @@ header h3 {
     .navigation {
         display: flex;
         margin-bottom: 150px;
+    }
+}
+
+
+.social {
+    display: flex;
+    justify-content: center;
+    padding: 100px 0;
+    .followMe h4 {
+        font-size: 2.4rem;
+        margin-right: 15px;
+        font-weight: 300;
+    }
+}
+.socialIcons {
+    display: flex;
+    border-left: 2px solid #333;
+    padding-bottom: 0;
+     li {
+        padding-bottom:0;
+         i {
+            font-size: 2.4rem;
+        }
     }
 }
