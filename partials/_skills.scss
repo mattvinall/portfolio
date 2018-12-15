@@ -1,0 +1,15 @@
+.skills {
+    background: $offWhite;
+    min-height: 100vh;
+   .skillsContainer {
+       display: flex;
+       flex: 1 0 auto; 
+       justify-content: space-around;
+       flex-wrap: wrap;
+       i {
+           font-size: 10rem;
+           margin: 50px 100px;
+       }
+   }
+}
+

@@ -1,0 +1,25 @@
+header {
+    min-height: 100vh;
+    background-color:$backgroundGrey;
+}
+
+header h2 {
+    font-size: 4.5rem;
+    line-height: 56px;
+    text-align: center;
+    font-weight: 700;
+}
+
+header h3 {
+    font-size: 4.5rem;
+    text-align: center;
+}
+
+.navigationContainer {
+    display: flex;
+    justify-content: space-between;
+    .navigation {
+        display: flex;
+        margin-bottom: 150px;
+    }
+}
