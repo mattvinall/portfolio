@@ -1,0 +1,14 @@
+.aboutMeContainer {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
+}
+
+.profileImage {
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 50% 100%, 0 50%);
+    width: 400px;
+}
+
+.bio p {
+    width: 80%;
+}
