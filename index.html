@@ -15,7 +15,7 @@
         crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,700" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
     <link rel="stylesheet" href="styles/style.css" />
 </head>
 
@@ -55,9 +55,9 @@
 
             <!-- INTRODUCTION -->
             <section class="introduction">
-                <h2>Hi</h2>
+                <h2 class="wow shake">Hi</h2>
                 <h2>I'm Matt Vinall</h2>
-                <h2>Front End Web Developer</h2>
+                <h2><span class="typedStrings"></span></h2>
             </section>
 
             <!-- SOCIAL -->
@@ -122,7 +122,7 @@
         <!-- PROJECT SECTION BEGINS -->
         <section id="work" class="work">
             <div class="projectContainer wrapper">
-                <div class="project radflix wow slideInLeft" data-wow-duration="2s" data-wow-delay="5s">
+                <div class="project radflix wow fadeInUp" data-wow-duration="1500">
                     <div class="description">
                         <h3>Radflix</h3>
                         <h4>HTML // SCSS // React // Restful API // Firebase // Group Project</h4>
@@ -139,7 +139,7 @@
                     </div>
                 </div>
 
-                <div class="project nerdy">
+                <div class="project nerdy wow fadeInUp" data-wow-duration="1500">
                     <div class="deviceImage">
                         <img src="./assets/nerdy.png" alt="">
                     </div>
@@ -156,7 +156,7 @@
                     </div>
                 </div>
 
-                <div class="project sophie">
+                <div class="project sophie wow fadeInUp" data-wow-duration="1500">
                     <div class="description">
                         <h3>Sophie</h3>
                         <h4>HTML // SCSS // PSD Conversion // BEM </h4>
@@ -173,7 +173,7 @@
                     </div>
                 </div>
 
-                <div class="project backInTimes">
+                <div class="project backInTimes wow fadeInUp" data-wow-duration="1500">
                     <div class="deviceImage">
                         <img src="./assets/whatATime.png" alt="">
                     </div>
@@ -197,8 +197,10 @@
 
 
     <!-- TYPED JS CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.9/typed.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.9/typed.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="scripts/app.js"></script>
+
     <script>
         new WOW().init();
     </script>
