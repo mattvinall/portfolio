@@ -312,14 +312,14 @@ header h2 {
   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 50% 100%, 0 50%);
   width: 350px; }
 
-.bio p {
+.bio {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  width: 80%; }
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
+  .bio p {
+    width: 70%; }
 
 .skills {
   background: rgba(42, 42, 42, 0.4);

@@ -9,8 +9,10 @@
     width: 350px;
 }
 
-.bio p {
+.bio {
     display: flex;
-    justify-content: space-between;
-    width: 80%;
+    justify-content: space-around;
+    p {
+        width: 70%;
+    }
 }
