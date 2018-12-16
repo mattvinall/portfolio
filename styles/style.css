@@ -191,8 +191,15 @@ a {
   margin: 0 auto; }
 
 header {
-  background-color: #bbbbbb;
-  min-height: 100vh; }
+  background-color: #bbb;
+  min-height: 100vh;
+  background-attachment: fixed;
+  background: -webkit-linear-gradient(45deg, rgba(94, 91, 91, 0.4), rgba(1, 41, 172, 0.057)), url(../assets/bernard-hermant-632545-unsplash.jpg);
+  background: -o-linear-gradient(45deg, rgba(94, 91, 91, 0.4), rgba(1, 41, 172, 0.057)), url(../assets/bernard-hermant-632545-unsplash.jpg);
+  background: linear-gradient(45deg, rgba(94, 91, 91, 0.4), rgba(1, 41, 172, 0.057)), url(../assets/bernard-hermant-632545-unsplash.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 .headerBackground {
   position: absolute;
@@ -201,11 +208,7 @@ header {
   right: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#bbbbbb));
-  background-image: -webkit-linear-gradient(#bbbbbb);
-  background-image: -o-linear-gradient(#bbbbbb);
-  background-image: linear-gradient(#bbbbbb); }
+  height: 100%; }
 
 header h2 {
   font-size: 4.5rem;
@@ -299,17 +302,23 @@ header h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   margin: 100px 0; }
 
 .profileImage {
   -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 50% 100%, 0 50%);
   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 50% 100%, 0 50%);
-  width: 400px; }
+  width: 350px; }
 
 .bio p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   width: 80%; }
 
 .skills {

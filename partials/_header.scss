@@ -1,6 +1,11 @@
 header {
     background-color:$backgroundGrey;
     min-height: 100vh;
+    background-attachment: fixed;
+    background: linear-gradient(45deg, rgba(94, 91, 91, 0.4), rgba(1, 41, 172, 0.057)), url(../assets/bernard-hermant-632545-unsplash.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .headerBackground {
@@ -11,7 +16,6 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient($backgroundGrey);
 }
 
 header h2 {
