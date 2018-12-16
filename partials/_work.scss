@@ -1,3 +1,33 @@
+.work {
+    background: #f0f0f0;
+    padding: 100px 0;
+}
+.projectContainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    .project,
+    .description {
+        display: flex;
+        justify-content: space-between;
+        margin: 25px 0;
+    }
+    .description {
+        display: flex;
+        width: 40%;
+        flex-direction: column;
+        h3 {
+            text-transform: uppercase;
+        }
+        h4 {
+            font-weight: 300;
+        }
+    }
+}
+
 .deviceImage img {
-    width: 600px;
+    width: 500px;
+    .deviceImage img:nth-of-type(2n+1) {
+        margin-right: 50px;
+    }
 }
