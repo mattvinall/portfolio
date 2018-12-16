@@ -28,27 +28,25 @@
                 <div class="logo">
                     <h1>Matt V.</h2>
                 </div>
-
                 <ul class="navigation">
-                    <li>
-                        <a href="#">Home</a>
-                    </li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
 
-                    <li>
-                        <a href="#">About</a>
-                    </li>
-
-                    <li>
-                        <a href="#">Skills</a>
-                    </li>
-
-                    <li>
-                        <a href="#">Work</a>
-                    </li>
-
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
+            <!-- MOBILE NAVIGATION -->
+            <nav class="navMobile">
+                <div class="hamburger">
+                    <i class="fas fa-bars icon"></i>
+                </div>
+                <ul class="menu">
+                    <li class="exit-responsive icon"><i class="fas fa-times"></i></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
             <!-- NAVIGATION ENDS -->
@@ -122,7 +120,7 @@
         <!-- PROJECT SECTION BEGINS -->
         <section id="work" class="work">
             <div class="projectContainer wrapper">
-                <div class="project radflix wow fadeInUp" data-wow-duration="1500">
+                <div class="project radflix wow fadeInUp" data-wow-duration="1s">
                     <div class="description">
                         <h3>Radflix</h3>
                         <h4>HTML // SCSS // React // Restful API // Firebase // Group Project</h4>
@@ -139,7 +137,7 @@
                     </div>
                 </div>
 
-                <div class="project nerdy wow fadeInUp" data-wow-duration="1500">
+                <div class="project nerdy wow fadeInUp" data-wow-duration="2s">
                     <div class="deviceImage">
                         <img src="./assets/nerdy.png" alt="">
                     </div>
@@ -156,7 +154,7 @@
                     </div>
                 </div>
 
-                <div class="project sophie wow fadeInUp" data-wow-duration="1500">
+                <div class="project sophie wow fadeInUp" data-wow-duration="3s">
                     <div class="description">
                         <h3>Sophie</h3>
                         <h4>HTML // SCSS // PSD Conversion // BEM </h4>
@@ -173,7 +171,7 @@
                     </div>
                 </div>
 
-                <div class="project backInTimes wow fadeInUp" data-wow-duration="1500">
+                <div class="project backInTimes wow fadeInUp" data-wow-duration="4s">
                     <div class="deviceImage">
                         <img src="./assets/whatATime.png" alt="">
                     </div>
@@ -195,15 +193,16 @@
     </main>
 
 
-
+    <!-- JQUERY -->
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='
+        crossorigin='anonymous'></script>
     <!-- TYPED JS CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.9/typed.min.js"></script>
+    <!-- WOW JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <!-- SMOOTH SCROLL -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.2.0/jquery.smooth-scroll.min.js"></script>
     <script src="scripts/app.js"></script>
-
-    <script>
-        new WOW().init();
-    </script>
 </body>
 
 </html>

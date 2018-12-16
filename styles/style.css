@@ -192,9 +192,7 @@ a {
 
 header {
   background-color: #bbbbbb;
-  min-height: 100vh;
-  position: relative;
-  overflow: hidden; }
+  min-height: 100vh; }
 
 .headerBackground {
   position: absolute;
@@ -207,13 +205,7 @@ header {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#bbbbbb));
   background-image: -webkit-linear-gradient(#bbbbbb);
   background-image: -o-linear-gradient(#bbbbbb);
-  background-image: linear-gradient(#bbbbbb);
-  -webkit-transform: skewY(-6deg);
-  -ms-transform: skewY(-6deg);
-  transform: skewY(-6deg);
-  -webkit-transform-origin: top left;
-  -ms-transform-origin: top left;
-  transform-origin: top left; }
+  background-image: linear-gradient(#bbbbbb); }
 
 header h2 {
   font-size: 4.5rem;
@@ -238,6 +230,9 @@ header h2 {
     display: flex;
     margin-bottom: 150px; }
 
+.navMobile {
+  display: none; }
+
 .social {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -261,6 +256,44 @@ header h2 {
     padding-bottom: 0; }
     .socialIcons li i {
       font-size: 2.4rem; }
+
+@media screen and (max-width: 750px) {
+  header {
+    min-height: 80vh; }
+  .introduction {
+    padding-top: 100px; }
+  .navigationContainer {
+    display: none; }
+  .navMobile {
+    display: block;
+    width: 100%; }
+    .navMobile .hamburger {
+      position: absolute;
+      right: 50px;
+      top: 50px; }
+      .navMobile .hamburger .icon {
+        font-size: 4rem; }
+    .navMobile .menu {
+      display: none;
+      background: #232323;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 20vh; }
+      .navMobile .menu .icon {
+        font-size: 4rem;
+        color: #fff; }
+      .navMobile .menu li {
+        list-style: none;
+        padding: 20px;
+        text-align: center; }
+        .navMobile .menu li a {
+          -webkit-transition: color 0.5s ease;
+          -o-transition: color 0.5s ease;
+          transition: color 0.5s ease;
+          color: #fff; } }
 
 .aboutMeContainer {
   display: -webkit-box;
