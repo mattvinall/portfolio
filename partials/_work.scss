@@ -10,7 +10,7 @@
     .description {
         display: flex;
         justify-content: space-between;
-        margin: 25px 0;
+        margin: 25px 40px;
     }
     .description {
         display: flex;
@@ -21,6 +21,7 @@
         }
         h4 {
             font-weight: 300;
+            padding-top: 15px;
         }
     }
 }

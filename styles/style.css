@@ -183,7 +183,8 @@ a {
   text-decoration: none;
   color: #000;
   font-size: 2rem;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  cursor: pointer; }
 
 .wrapper {
   max-width: 85%;
@@ -279,7 +280,7 @@ header h2 {
   width: 80%; }
 
 .skills {
-  background: rgba(42, 42, 42, 0.7);
+  background: rgba(42, 42, 42, 0.4);
   color: #e6e6e6;
   min-height: 50vh; }
   .skills .skillsContainer {
@@ -322,7 +323,7 @@ header h2 {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    margin: 25px 0; }
+    margin: 25px 40px; }
   .projectContainer .description {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -335,7 +336,8 @@ header h2 {
     .projectContainer .description h3 {
       text-transform: uppercase; }
     .projectContainer .description h4 {
-      font-weight: 300; }
+      font-weight: 300;
+      padding-top: 15px; }
 
 .deviceImage img {
   width: 500px; }
