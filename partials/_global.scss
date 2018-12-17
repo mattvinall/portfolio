@@ -26,8 +26,7 @@ h4 {
 }
 
 p {
-    font-size: 1.6rem;
-    line-height: 25px;
+    @include text(25px, 1.6rem);
 }
 
 ul, li {
@@ -40,10 +39,20 @@ ul, li {
 
 a {
     text-decoration: none;
-    color: #000;
+    color: #333;
     font-size: 2rem;
+    font-weight: 700;
     text-transform: uppercase;
     cursor: pointer;
+}
+
+section {
+    padding: 50px 0;
+}
+
+.sectionHeader {
+    text-align: center;
+    letter-spacing: 3px;
 }
 
 .wrapper {

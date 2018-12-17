@@ -184,6 +184,7 @@ h4 {
   font-weight: 400; }
 
 p {
+  font-family: 'Poppins', sans-serif;
   font-size: 1.6rem;
   line-height: 25px; }
 
@@ -196,10 +197,18 @@ ul, li {
 
 a {
   text-decoration: none;
-  color: #000;
+  color: #333;
   font-size: 2rem;
+  font-weight: 700;
   text-transform: uppercase;
   cursor: pointer; }
+
+section {
+  padding: 50px 0; }
+
+.sectionHeader {
+  text-align: center;
+  letter-spacing: 3px; }
 
 .wrapper {
   max-width: 85%;
@@ -340,6 +349,8 @@ header h2 {
   background: #f0f0f0;
   color: #232323;
   min-height: 50vh; }
+  .skills h3 {
+    text-align: center; }
   .skills .skillsContainer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -354,7 +365,7 @@ header h2 {
     flex-wrap: wrap; }
     .skills .skillsContainer i {
       font-size: 10rem;
-      margin: 50px 100px; }
+      margin: 25px 50px; }
 
 .skills h3 {
   padding-top: 50px;
@@ -362,8 +373,7 @@ header h2 {
   text-transform: uppercase; }
 
 .work {
-  background: rgba(42, 42, 42, 0.5);
-  padding: 100px 0; }
+  background: rgba(42, 42, 42, 0.3); }
 
 .projectContainer {
   display: -webkit-box;
@@ -371,7 +381,8 @@ header h2 {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  width: 100%; }
+  width: 100%;
+  margin-top: 50px; }
   .projectContainer .project,
   .projectContainer .description {
     display: -webkit-box;
@@ -394,9 +405,13 @@ header h2 {
       text-transform: uppercase; }
     .projectContainer .description h4 {
       font-weight: 300;
-      padding-top: 15px; }
+      padding-top: 15px;
+      line-height: 30px; }
+    .projectContainer .description a {
+      font-weight: 700;
+      font-size: 1.6rem; }
 
 .deviceImage img {
-  width: 500px; }
+  max-width: 500px; }
   .deviceImage img .deviceImage img:nth-of-type(2n+1) {
     margin-right: 50px; }

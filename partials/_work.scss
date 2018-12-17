@@ -1,11 +1,12 @@
 .work {
-    background: rgba(42, 42, 42, 0.5);
-    padding: 100px 0;
+    background: rgba(42, 42, 42, 0.3);
 }
+
 .projectContainer {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    margin-top: 50px;
     .project,
     .description {
         display: flex;
@@ -22,12 +23,17 @@
         h4 {
             font-weight: 300;
             padding-top: 15px;
+            line-height: 30px;
+        }
+        a {
+            font-weight: 700;
+            font-size: 1.6rem;
         }
     }
 }
 
 .deviceImage img {
-    width: 500px;
+    max-width: 500px;
     .deviceImage img:nth-of-type(2n+1) {
         margin-right: 50px;
     }
