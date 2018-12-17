@@ -1,6 +1,6 @@
 .contactContainer {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .contactForm {
     margin-top: 50px;
@@ -26,8 +26,25 @@
             font-weight: 700;
         }
     }
+}
 
-    .contactSocial li i {
+.contactSocial {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    border: 3px solid #232323;
+    width: 40%;
+    h4 {
+        border-bottom: 2px solid #232323;
+    }
+    a {
+        font-size: 3rem;
+        font-family: 'Poppins', sans-serif;
+    }
+    i {
         font-size: 4rem;
+        padding-right: 15px;
     }
 }
