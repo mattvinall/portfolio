@@ -388,9 +388,8 @@ header h2 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
     margin: 25px 40px; }
   .projectContainer .description {
     display: -webkit-box;
@@ -412,6 +411,5 @@ header h2 {
       font-size: 1.6rem; }
 
 .deviceImage img {
-  max-width: 500px; }
-  .deviceImage img .deviceImage img:nth-of-type(2n+1) {
-    margin-right: 50px; }
+  max-width: 450px;
+  margin-top: 25px; }
