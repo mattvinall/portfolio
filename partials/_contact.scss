@@ -1,0 +1,33 @@
+.contactContainer {
+    display: flex;
+    justify-content: space-around;
+}
+.contactForm {
+    margin-top: 50px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    input, 
+    .message {
+        padding: 15px 30px;
+        margin: 10px;
+        border-radius: 15px;
+        width: 100%;
+        color: #232323;
+        font-size: 1.8rem;
+        box-shadow: 5px 5px 5px #232323;
+    }
+    .submit {
+        width: 50%;
+        &:hover {
+            background: #232323;
+            transition: 300ms ease-in-out;
+            color: $offWhite;
+            font-weight: 700;
+        }
+    }
+
+    .contactSocial li i {
+        font-size: 4rem;
+    }
+}

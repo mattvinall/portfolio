@@ -413,3 +413,42 @@ header h2 {
 .deviceImage img {
   max-width: 450px;
   margin-top: 25px; }
+
+.contactContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
+
+.contactForm {
+  margin-top: 50px;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  .contactForm input,
+  .contactForm .message {
+    padding: 15px 30px;
+    margin: 10px;
+    border-radius: 15px;
+    width: 100%;
+    color: #232323;
+    font-size: 1.8rem;
+    -webkit-box-shadow: 5px 5px 5px #232323;
+    box-shadow: 5px 5px 5px #232323; }
+  .contactForm .submit {
+    width: 50%; }
+    .contactForm .submit:hover {
+      background: #232323;
+      -webkit-transition: 300ms ease-in-out;
+      -o-transition: 300ms ease-in-out;
+      transition: 300ms ease-in-out;
+      color: #e6e6e6;
+      font-weight: 700; }
+  .contactForm .contactSocial li i {
+    font-size: 4rem; }

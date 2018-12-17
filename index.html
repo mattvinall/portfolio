@@ -195,20 +195,23 @@
                     <form action="http://www.focuspocus.io/magic/matt.vinall7@gmail.com" method="POST" enctype="multipart/form-data"
                         class="contactForm">
                         <label for="name" id="name" class="visuallyhidden">Name</label>
-                        <input type="text" id="name" class="nameLabel" placeholder="Name" required>
+                        <input type="text" id="name" class="nameLabel" placeholder="Name*" required>
 
                         <label for="email" class="visuallyhidden">Email</label>
-                        <input type="email" id="email" class="email" placeholder="email" required>
+                        <input type="email" id="email" class="email" placeholder="Email*" required>
 
                         <label for="message" class="visuallyhidden">Message Me!</label>
-                        <input type="textArea" name="message" class="message" id="message" placeholder="Leave a Message">
+                        <textarea name="message" cols="50" rows="5" class="message" id="message" placeholder="Leave a Message"></textarea>
 
                         <label for="submit" class="visuallyhidden">Submit</label>
-                        <input type="submit" id="submit" class="submit">
+                        <input type="submit" id="submit" class="submit" value="hi(re) Me">
                     </form>
                     <!-- CONTACT ICONS -->
                     <div class="contactSocial">
-
+                        <ul>
+                            <li><a href="mailto:matt.vinall7@gmail.com"><i class="fas fa-envelope"></i>Email Me</a></li>
+                            <li><a href="tel:6475675903"><i class="fas fa-phone">Phone me</i></a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
