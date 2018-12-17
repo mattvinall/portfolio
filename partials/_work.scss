@@ -11,7 +11,7 @@
     .description {
         display: flex;
         justify-content: space-around;
-        margin: 25px 40px;
+        margin: 50px 0;
     }
     .description {
         display: flex;
@@ -22,6 +22,7 @@
         }
         h4 {
             font-weight: 300;
+            font-size: 2rem;
             padding-top: 15px;
             line-height: 30px;
         }
@@ -30,6 +31,11 @@
             font-size: 1.6rem;
         }
     }
+}
+
+.radflix,
+.sophie {
+    text-align: right;
 }
 
 .deviceImage img {

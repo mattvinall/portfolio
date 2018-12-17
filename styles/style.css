@@ -185,7 +185,7 @@ h4 {
 
 p {
   font-family: 'Poppins', sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   line-height: 25px; }
 
 ul, li {
@@ -334,7 +334,7 @@ header h2 {
 .profileImage {
   -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 50% 100%, 0 50%);
   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 50% 100%, 0 50%);
-  width: 350px; }
+  width: 450px; }
 
 .bio {
   display: -webkit-box;
@@ -390,7 +390,7 @@ header h2 {
     display: flex;
     -ms-flex-pack: distribute;
     justify-content: space-around;
-    margin: 25px 40px; }
+    margin: 50px 0; }
   .projectContainer .description {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -404,11 +404,16 @@ header h2 {
       text-transform: uppercase; }
     .projectContainer .description h4 {
       font-weight: 300;
+      font-size: 2rem;
       padding-top: 15px;
       line-height: 30px; }
     .projectContainer .description a {
       font-weight: 700;
       font-size: 1.6rem; }
+
+.radflix,
+.sophie {
+  text-align: right; }
 
 .deviceImage img {
   max-width: 450px;
@@ -467,7 +472,9 @@ header h2 {
   align-items: center;
   margin-top: 50px;
   border: 3px solid #232323;
-  width: 40%; }
+  width: 40%;
+  -webkit-box-shadow: 25px 20px 25px #232323;
+  box-shadow: 25px 20px 25px #232323; }
   .contactSocial h4 {
     border-bottom: 2px solid #232323; }
   .contactSocial a {
@@ -476,3 +483,10 @@ header h2 {
   .contactSocial i {
     font-size: 4rem;
     padding-right: 15px; }
+    .contactSocial i:hover {
+      -webkit-transform: scale(1.5);
+      -ms-transform: scale(1.5);
+      transform: scale(1.5);
+      -webkit-transition: 400ms ease-in;
+      -o-transition: 400ms ease-in;
+      transition: 400ms ease-in; }

@@ -36,6 +36,7 @@
     margin-top: 50px;
     border: 3px solid #232323;
     width: 40%;
+    box-shadow: 25px 20px 25px #232323;
     h4 {
         border-bottom: 2px solid #232323;
     }
@@ -46,5 +47,9 @@
     i {
         font-size: 4rem;
         padding-right: 15px;
+        &:hover {
+            transform: scale(1.5);
+            transition: 400ms ease-in
+        }
     }
 }
