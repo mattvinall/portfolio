@@ -1,5 +1,5 @@
 .work {
-    background: rgba(42, 42, 42, 0.3);
+    background: #fff;
 }
 
 .projectContainer {
@@ -40,5 +40,25 @@
 
 .deviceImage img {
     max-width: 450px;
-    margin-top: 25px;
+    margin-top: 40px;
+}
+
+.buttonContainer {
+    display: flex;
+    a {
+        background: $offWhite;;
+        padding: 15px;
+        margin: 0 10px;
+        &:hover {
+            background: #1d4fa2;
+            transition: 400ms ease-in;
+            transform: scale(1.1);
+            color: #fff;
+        }
+    }
+}
+
+.flexEnd {
+    display: flex;
+    justify-content: flex-end;
 }

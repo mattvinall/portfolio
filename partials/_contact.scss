@@ -1,3 +1,11 @@
+.contact {
+    background: #1d4fa2;
+    position: relative;
+    h3 {
+        color: #f0f0f0;
+    }
+}
+
 .contactContainer {
     display: flex;
     justify-content: space-between;
@@ -7,49 +15,55 @@
     width: 50%;
     display: flex;
     flex-direction: column;
+    box-shadow: 2px 2px 5px solid #232323;
     input, 
     .message {
         padding: 15px 30px;
         margin: 10px;
-        border-radius: 15px;
         width: 100%;
         color: #232323;
         font-size: 1.8rem;
-        box-shadow: 5px 5px 5px #232323;
     }
     .submit {
-        width: 50%;
+        width: 100%;
+        background: $offWhite;
+        color: #1d4fa2;
         &:hover {
-            background: #232323;
             transition: 300ms ease-in-out;
-            color: $offWhite;
-            font-weight: 700;
+            background: #ffcc33;
+            color: #1d4fa2;
         }
     }
 }
 
-.contactSocial {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 50px;
-    border: 3px solid #232323;
-    width: 40%;
-    box-shadow: 25px 20px 25px #232323;
-    h4 {
-        border-bottom: 2px solid #232323;
-    }
-    a {
-        font-size: 3rem;
-        font-family: 'Poppins', sans-serif;
-    }
-    i {
-        font-size: 4rem;
-        padding-right: 15px;
-        &:hover {
-            transform: scale(1.5);
-            transition: 400ms ease-in
-        }
-    }
+// .contactSocial {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-around;
+//     align-items: center;
+//     margin-top: 50px;
+//     width: 40%;
+//     h4 {
+//         border-bottom: 2px solid #232323;
+//     }
+//     a {
+//         font-size: 3rem;
+//         font-family: 'Poppins', sans-serif;
+//     }
+//     i {
+//         font-size: 4rem;
+//         padding-right: 15px;
+//         &:hover {
+//             transform: scale(1.5);
+//             transition: 400ms ease-in;
+//             color: #ffcc33;
+//         }
+//     }
+// }
+
+.itsMe img {
+    width: 55%;
+    position:relative; 
+    left: 25%;
+    bottom: 5%;
 }

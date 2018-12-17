@@ -215,15 +215,21 @@ section {
   margin: 0 auto; }
 
 header {
-  background-color: #bbb;
+  background-color: #1d4fa2;
   min-height: 100vh;
   background-attachment: fixed;
-  background: -webkit-linear-gradient(45deg, rgba(94, 91, 91, 0.4), rgba(1, 41, 172, 0.057)), url(../assets/bernard-hermant-632545-unsplash.jpg);
-  background: -o-linear-gradient(45deg, rgba(94, 91, 91, 0.4), rgba(1, 41, 172, 0.057)), url(../assets/bernard-hermant-632545-unsplash.jpg);
-  background: linear-gradient(45deg, rgba(94, 91, 91, 0.4), rgba(1, 41, 172, 0.057)), url(../assets/bernard-hermant-632545-unsplash.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover; }
+  header h1 {
+    color: #e6e6e6; }
+  header h2 {
+    font-size: 4.5rem;
+    line-height: 56px;
+    text-align: center;
+    font-weight: 700;
+    padding: 10px 0;
+    color: #e6e6e6; }
 
 .headerBackground {
   position: absolute;
@@ -233,13 +239,6 @@ header {
   left: 0;
   width: 100%;
   height: 100%; }
-
-header h2 {
-  font-size: 4.5rem;
-  line-height: 56px;
-  text-align: center;
-  font-weight: 700;
-  padding: 10px 0; }
 
 .introduction h2:last-child {
   font-weight: 300; }
@@ -256,6 +255,8 @@ header h2 {
     display: -ms-flexbox;
     display: flex;
     margin-bottom: 150px; }
+    .navigationContainer .navigation a {
+      color: #e6e6e6; }
 
 .navMobile {
   display: none; }
@@ -277,12 +278,12 @@ header h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-left: 2px solid #333;
   padding-bottom: 0; }
   .socialIcons li {
     padding-bottom: 0; }
     .socialIcons li i {
-      font-size: 2.4rem; }
+      font-size: 2.4rem;
+      color: #ffcc33; }
 
 @media screen and (max-width: 750px) {
   header {
@@ -373,7 +374,7 @@ header h2 {
   text-transform: uppercase; }
 
 .work {
-  background: rgba(42, 42, 42, 0.3); }
+  background: #fff; }
 
 .projectContainer {
   display: -webkit-box;
@@ -417,7 +418,39 @@ header h2 {
 
 .deviceImage img {
   max-width: 450px;
-  margin-top: 25px; }
+  margin-top: 40px; }
+
+.buttonContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .buttonContainer a {
+    background: #e6e6e6;
+    padding: 15px;
+    margin: 0 10px; }
+    .buttonContainer a:hover {
+      background: #1d4fa2;
+      -webkit-transition: 400ms ease-in;
+      -o-transition: 400ms ease-in;
+      transition: 400ms ease-in;
+      -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      transform: scale(1.1);
+      color: #fff; }
+
+.flexEnd {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
+
+.contact {
+  background: #1d4fa2;
+  position: relative; }
+  .contact h3 {
+    color: #f0f0f0; }
 
 .contactContainer {
   display: -webkit-box;
@@ -436,57 +469,29 @@ header h2 {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-  flex-direction: column; }
+  flex-direction: column;
+  -webkit-box-shadow: 2px 2px 5px solid #232323;
+  box-shadow: 2px 2px 5px solid #232323; }
   .contactForm input,
   .contactForm .message {
     padding: 15px 30px;
     margin: 10px;
-    border-radius: 15px;
     width: 100%;
     color: #232323;
-    font-size: 1.8rem;
-    -webkit-box-shadow: 5px 5px 5px #232323;
-    box-shadow: 5px 5px 5px #232323; }
+    font-size: 1.8rem; }
   .contactForm .submit {
-    width: 50%; }
+    width: 100%;
+    background: #e6e6e6;
+    color: #1d4fa2; }
     .contactForm .submit:hover {
-      background: #232323;
       -webkit-transition: 300ms ease-in-out;
       -o-transition: 300ms ease-in-out;
       transition: 300ms ease-in-out;
-      color: #e6e6e6;
-      font-weight: 700; }
+      background: #ffcc33;
+      color: #1d4fa2; }
 
-.contactSocial {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-top: 50px;
-  border: 3px solid #232323;
-  width: 40%;
-  -webkit-box-shadow: 25px 20px 25px #232323;
-  box-shadow: 25px 20px 25px #232323; }
-  .contactSocial h4 {
-    border-bottom: 2px solid #232323; }
-  .contactSocial a {
-    font-size: 3rem;
-    font-family: 'Poppins', sans-serif; }
-  .contactSocial i {
-    font-size: 4rem;
-    padding-right: 15px; }
-    .contactSocial i:hover {
-      -webkit-transform: scale(1.5);
-      -ms-transform: scale(1.5);
-      transform: scale(1.5);
-      -webkit-transition: 400ms ease-in;
-      -o-transition: 400ms ease-in;
-      transition: 400ms ease-in; }
+.itsMe img {
+  width: 55%;
+  position: relative;
+  left: 25%;
+  bottom: 5%; }
