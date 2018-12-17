@@ -2,3 +2,19 @@
 $backgroundGrey:  #bbb;
 $offWhite: #e6e6e6;
 $blackShade: #333;
+
+
+// Mixins 
+@mixin heading($lineHeight, $fontSize, $fontWeight) {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    font-size: $fontSize;
+    line-height: $lineHeight;
+    font-weight: $fontWeight;
+}
+
+@mixin text ($lineHeight, $fontSize) {
+    font-family: 'Poppins', sans-serif;
+    font-size: $fontSize;
+    line-height: $lineHeight;
+}
