@@ -62,8 +62,9 @@
 // }
 
 .itsMe img {
-    width: 55%;
-    position:relative; 
-    left: 25%;
-    bottom: 5%;
+    width: 35%;
+    min-height: 400px;
+    position: absolute;
+    bottom: 0;
+    right: 5%;
 }

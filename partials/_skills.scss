@@ -7,12 +7,10 @@
     }
    .skillsContainer {
        display: flex;
-       flex: 1 0 auto; 
-       justify-content: space-between;
+       justify-content: space-around;
        flex-wrap: wrap;
        i {
            font-size: 10rem;
-           margin: 25px 50px;
        }
    }
 }
