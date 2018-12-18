@@ -172,7 +172,7 @@ h2 {
 h3 {
   font-family: 'Poppins', sans-serif;
   color: #333;
-  font-size: 3rem;
+  font-size: 3.6rem;
   line-height: 22px;
   font-weight: 700; }
 
@@ -230,7 +230,7 @@ header {
     text-align: center;
     font-weight: 700;
     padding: 10px 0;
-    color: #e6e6e6; }
+    color: #f0f0f0; }
 
 .introduction h2:last-child {
   font-weight: 300; }
@@ -248,7 +248,7 @@ header {
     display: flex;
     margin-bottom: 150px; }
     .navigationContainer .navigation a {
-      color: #e6e6e6; }
+      color: #f0f0f0; }
 
 .navMobile {
   display: none; }
@@ -270,7 +270,7 @@ header {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  position: absolute;
+  position: fixed;
   right: 2.5%;
   top: 35%; }
   .socialIcons li {
@@ -336,7 +336,7 @@ header {
         font-size: 4rem; }
     .navMobile .menu {
       display: none;
-      background: #232323;
+      background: #333;
       width: 100%;
       position: absolute;
       top: 0;
@@ -364,6 +364,10 @@ header {
   .aboutMeContainer .bio {
     padding-left: 50px; }
 
+.imageContainer {
+  -webkit-filter: drop-shadow(-50px 0 0 #f0f0f0);
+  filter: drop-shadow(-50px 0 0 #f0f0f0); }
+
 .profileImage {
   -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 50% 100%, 0 50%);
   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 50% 100%, 0 50%);
@@ -374,17 +378,19 @@ header {
   .skills h3 {
     color: #232323;
     font-weight: 700;
-    text-align: center; }
+    text-align: center;
+    letter-spacing: 3px; }
   .skills .skillsContainer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-    -ms-flex-preferred-size: 800px;
-    flex-basis: 800px; }
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .skills .skillsContainer li {
+      padding: 15px 20px; }
     .skills .skillsContainer i {
       font-size: 9rem; }
 
@@ -450,7 +456,7 @@ header {
   display: -ms-flexbox;
   display: flex; }
   .buttonContainer a {
-    background: #e6e6e6;
+    background: #f0f0f0;
     padding: 15px;
     margin: 0 10px; }
     .buttonContainer a:hover {
@@ -507,7 +513,7 @@ header {
     font-size: 1.8rem; }
   .contactForm .submit {
     width: 100%;
-    background: #e6e6e6;
+    background: #f0f0f0;
     color: #1d4fa2; }
     .contactForm .submit:hover {
       -webkit-transition: 300ms ease-in-out;

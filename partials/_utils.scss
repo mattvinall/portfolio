@@ -1,13 +1,15 @@
 // Colors
-$backgroundGrey:  #bbb;
-$offWhite: #e6e6e6;
+$offWhite: #f0f0f0;
+$greyShade: #e6e6e6;
 $blackShade: #333;
+$yellowAccent: #ffcc33;
+$blueShade: #1d4fa2;
 
 
 // Mixins 
 @mixin heading($lineHeight, $fontSize, $fontWeight) {
     font-family: 'Poppins', sans-serif;
-    color: #333;
+    color: $blackShade;
     font-size: $fontSize;
     line-height: $lineHeight;
     font-weight: $fontWeight;
