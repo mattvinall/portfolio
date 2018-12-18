@@ -1,18 +1,12 @@
 .aboutMeContainer {
-    display: flex;
-    justify-content: space-between;
     margin: 100px 0;
+    display: flex;
+    .bio {
+        padding-left: 50px;
+    }
 }
 
 .profileImage {
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 50% 100%, 0 50%);
     width: 450px;
-}
-
-.bio {
-    display: flex;
-    justify-content: space-around;
-    p {
-        width: 70%;
-    }
 }

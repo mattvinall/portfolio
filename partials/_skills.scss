@@ -1,14 +1,15 @@
 .skills {
     background:  #f0f0f0;
-    color: #232323;
-    min-height: 50vh;
     h3 {
+        color: #232323;
+        font-weight: 700;
         text-align: center;
     }
    .skillsContainer {
        display: flex;
-       justify-content: space-around;
        flex-wrap: wrap;
+       justify-content: space-around;
+       flex-basis: 800px;   
        i {
            font-size: 10rem;
        }

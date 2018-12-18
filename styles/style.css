@@ -330,42 +330,34 @@ header {
           color: #fff; } }
 
 .aboutMeContainer {
+  margin: 100px 0;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  margin: 100px 0; }
+  display: flex; }
+  .aboutMeContainer .bio {
+    padding-left: 50px; }
 
 .profileImage {
   -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 50% 100%, 0 50%);
   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 50% 100%, 0 50%);
   width: 450px; }
 
-.bio {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-  justify-content: space-around; }
-  .bio p {
-    width: 70%; }
-
 .skills {
-  background: #f0f0f0;
-  color: #232323;
-  min-height: 50vh; }
+  background: #f0f0f0; }
   .skills h3 {
+    color: #232323;
+    font-weight: 700;
     text-align: center; }
   .skills .skillsContainer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     -ms-flex-pack: distribute;
     justify-content: space-around;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap; }
+    -ms-flex-preferred-size: 800px;
+    flex-basis: 800px; }
     .skills .skillsContainer i {
       font-size: 10rem; }
 
@@ -403,7 +395,8 @@ header {
     -ms-flex-direction: column;
     flex-direction: column; }
     .projectContainer .description h3 {
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      font-weight: 700; }
     .projectContainer .description h4 {
       font-weight: 300;
       font-size: 2rem;
