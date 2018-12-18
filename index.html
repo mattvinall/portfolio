@@ -53,7 +53,7 @@
             <!-- NAVIGATION ENDS -->
 
             <!-- INTRODUCTION -->
-            <section class="introduction">
+            <section class="introduction smooth-scroll">
                 <h2 class="wow shake"><span aria-label="wave emoji">Hi👋</span></h2>
                 <h2>I'm Matt Vinall</h2>
                 <h2><span class="typedStrings"></span></h2>
@@ -70,7 +70,7 @@
                 </ul>
             </section>
             <div class="arrow bounce">
-                <a href="#about"><i class="fas fa-angle-double-down arrow"></i></a>
+                <a href="#about" class="smooth-scroll"><i class="fas fa-angle-double-down arrow"></i></a>
             </div>
         </div>
     </header>
@@ -78,7 +78,7 @@
 
     <!-- ABOUT SECTION STARTS -->
     <main>
-        <section id="about" class="about">
+        <section id="about" class="about smooth-scroll">
             <div class="wrapper">
                 <div class="aboutMeContainer wow slideInRight">
                     <div class="imageContainer">
@@ -109,21 +109,51 @@
                 <h3>Skills I know...</h3>
                 <div class="row row1">
                     <ul class="skillsContainer">
-                        <li><i class="devicon-html5-plain colored hvr-pulse"></i></li>
-                        <li><i class="devicon-css3-plain colored hvr-pulse"></i></li>
-                        <li><i class="devicon-sass-original colored hvr-pulse"></i></li>
-                        <li><i class="devicon-jquery-plain colored hvr-pulse"></i></li>
-                        <li><i class="devicon-react-original colored hvr-pulse"></i></li>
+                        <li>
+                            <i class="devicon-html5-plain colored hvr-pulse"></i>
+                            <h4 class="skillsTitle">HTML5</h4>
+                        </li>
+                        <li>
+                            <i class="devicon-css3-plain colored hvr-pulse"></i>
+                            <h4 class="skillsTitle">CSS3</h4>
+                        </li>
+                        <li>
+                            <i class="devicon-sass-original colored hvr-pulse"></i>
+                            <h4 class="skillsTitle">SASS</h4>
+                        </li>
+                        <li>
+                            <i class="devicon-jquery-plain colored hvr-pulse"></i>
+                            <h4 class="skillsTitle">Jquery</h4>
+                        </li>
+                        <li>
+                            <i class="devicon-javascript-plain colored hvr-pulse"></i>
+                            <h4 class="skillsTitle">Javascript</h4>
+                        </li>
                     </ul>
                 </div>
 
                 <div class="row row2">
                     <ul class="skillsContainer">
-                        <li><i class="hvr-pulse"><img src="../assets/firebase.svg"></i></li>
-                        <li><i class="devicon-javascript-plain colored hvr-pulse"></i></li>
-                        <li><i class="devicon-git-plain-wordmark colored hvr-pulse"></i></li>
-                        <li><i class="devicon-github-plain colored hvr-pulse"></i></li>
-                        <li><i class="devicon-visualstudio-plain colored hvr-pulse"></i></li>
+                        <li>
+                            <i class="devicon-react-original colored hvr-pulse"></i>
+                            <h4 class="skillsTitle">React</h4>
+                        </li>
+                        <li>
+                            <i class="devicon-webpack-plain colored"></i>
+                            <h4 class="skillsTitle">Webpack</h4>
+                        </li>
+                        <li>
+                            <i class="devicon-git-plain-wordmark colored hvr-pulse"></i>
+                            <h4 class="skillsTitle">Git</h4>
+                        </li>
+                        <li>
+                            <i class="devicon-github-plain colored hvr-pulse"></i>
+                            <h4 class="skillsTitle">Github</h4>
+                        </li>
+                        <li>
+                            <i class="devicon-visualstudio-plain colored hvr-pulse"></i>
+                            <h4 class="skillsTitle">VS Code</h4>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -135,7 +165,7 @@
             <h3 class="sectionHeader">Projects</h3>
             <div class="projectContainer wrapper">
                 <!-- GROUP REACT PROJECT -->
-                <div class="project radflix wow fadeInUp" data-wow-duration="1s">
+                <div class="project radflix wow fadeInUp" data-wow-duration="1500">
                     <div class="description">
                         <h3>Radflix</h3>
                         <h4>HTML // SCSS // React // Restful API // Firebase // Group Project</h4>
