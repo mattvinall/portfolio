@@ -186,7 +186,7 @@ h4 {
 p {
   font-family: 'Poppins', sans-serif;
   font-size: 1.7rem;
-  line-height: 25px; }
+  line-height: 35px; }
 
 ul, li {
   margin: 0;
@@ -396,8 +396,11 @@ header {
 
 .skills h3 {
   padding-top: 50px;
+  text-align: center; }
+
+.skillsTitle {
   text-align: center;
-  text-transform: uppercase; }
+  padding-top: 20px; }
 
 .work {
   background: #fff; }
@@ -445,11 +448,17 @@ header {
   text-align: right; }
 
 .deviceImage {
-  max-width: 500px; }
-
-.deviceImage img {
-  max-width: 450px;
-  margin-top: 40px; }
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: flex-end;
+  flex-direction: flex-end; }
+  .deviceImage img {
+    max-width: 550px;
+    margin-top: 40px; }
 
 .buttonContainer {
   display: -webkit-box;
@@ -458,12 +467,13 @@ header {
   .buttonContainer a {
     background: #f0f0f0;
     padding: 15px;
-    margin: 0 10px; }
+    margin: 0 10px;
+    border: 2px solid #1d4fa2; }
     .buttonContainer a:hover {
       background: #1d4fa2;
-      -webkit-transition: 400ms ease-in;
-      -o-transition: 400ms ease-in;
-      transition: 400ms ease-in;
+      -webkit-transition: 200ms ease-out;
+      -o-transition: 200ms ease-out;
+      transition: 200ms ease-out;
       -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
       transform: scale(1.1);
@@ -494,7 +504,7 @@ header {
 
 .contactForm {
   margin-top: 50px;
-  width: 45%;
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -522,37 +532,11 @@ header {
       background: #ffcc33;
       color: #1d4fa2; }
 
-.contactSocial {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-top: 50px;
-  background: #fff;
-  width: 45%; }
-  .contactSocial a {
-    font-size: 3rem;
-    font-family: 'Poppins', sans-serif;
-    text-transform: capitalize; }
-  .contactSocial i {
-    font-size: 4rem;
-    padding-right: 15px;
-    color: #ffcc33; }
-    .contactSocial i:hover {
-      -webkit-transform: scale(1.5);
-      -ms-transform: scale(1.5);
-      transform: scale(1.5);
-      -webkit-transition: 400ms ease-in;
-      -o-transition: 400ms ease-in;
-      transition: 400ms ease-in; }
+.itsMe img {
+  max-height: 600px;
+  position: absolute;
+  bottom: 0;
+  right: 5%; }
 
 footer {
   background: #f0f0f0;

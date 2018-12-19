@@ -13,7 +13,7 @@
 }
 .contactForm {
     margin-top: 50px;
-    width: 45%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     box-shadow: 2px 2px 5px solid #232323;
@@ -27,45 +27,20 @@
     }
     .submit {
         width: 100%;
-        background: $offWhite;
+        background: #f0f0f0;
         color: #1d4fa2;
         &:hover {
             transition: 300ms ease-in-out;
-            background: #ffcc33;
-            color: #1d4fa2;
-        }
-    }
-}
-
-.contactSocial {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 50px;
-    background: #fff;
-    width: 45%;
-    a {
-        font-size: 3rem;
-        font-family: 'Poppins', sans-serif;
-        text-transform: capitalize;
-    }
-    i {
-        font-size: 4rem;
-        padding-right: 15px;
-        color: #ffcc33;
-        &:hover {
-            transform: scale(1.5);
-            transition: 400ms ease-in
+            background: $yellowAccent;
+            color: $blueShade;
         }
     }
 }
 
 
-// .itsMe img {
-//     width: 35%;
-//     min-height: 400px;
-//     position: absolute;
-//     bottom: 0;
-//     right: 5%;
-// }
+.itsMe img {
+    max-height: 600px;
+    position: absolute;
+    bottom: 0;
+    right: 5%;
+}
