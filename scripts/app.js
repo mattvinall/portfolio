@@ -25,6 +25,10 @@ $(function () {
     });
     // smooth scroll
     $('nav ul li a').smoothScroll({
-        speed: 1000
+        speed: 700
     });
+    $('.smooth-scroll').smoothScroll({
+        speed: 700
+    });
+
 });

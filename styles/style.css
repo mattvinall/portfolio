@@ -402,7 +402,7 @@ header {
 
 .work {
   background: #fff;
-  padding: 50px 0; }
+  padding: 100px 0; }
 
 .projectContainer {
   display: -webkit-box;
@@ -416,9 +416,10 @@ header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-    margin: 40px 0; }
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+    margin-top: 50px; }
   .projectContainer .description {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -430,7 +431,9 @@ header {
     flex-direction: column; }
     .projectContainer .description h3 {
       text-transform: uppercase;
-      font-weight: 700; }
+      font-weight: 700;
+      border-bottom: 2px solid #1d4fa2;
+      padding-bottom: 5px; }
     .projectContainer .description h4 {
       font-weight: 300;
       font-size: 2rem;
@@ -540,12 +543,16 @@ header {
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end; }
+  .contactInfo ul li:last-child {
+    padding-right: 0; }
   .contactInfo a {
     color: #f0f0f0;
     font-size: 2rem;
     padding: 20px 0 0 0;
     text-transform: lowercase;
     text-align: right; }
+    .contactInfo a:hover {
+      color: #ffcc33; }
   .contactInfo i {
     font-size: 2.5rem; }
 

@@ -1,6 +1,6 @@
 .work {
     background: #fff;
-    padding: 50px 0;
+    padding: 100px 0;
 }
 
 .projectContainer {
@@ -10,8 +10,8 @@
     .project,
     .description {
         display: flex;
-        justify-content: space-around;
-        margin: 40px 0;
+        justify-content: space-evenly;
+        margin-top: 50px;
     }
     .description {
         display: flex;
@@ -20,6 +20,8 @@
         h3 {
             text-transform: uppercase;
             font-weight: 700;
+            border-bottom: 2px solid $blueShade;
+            padding-bottom: 5px;
         }
         h4 {
             font-weight: 300;
