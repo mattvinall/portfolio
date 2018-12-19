@@ -16,7 +16,6 @@
     width: 50%;
     display: flex;
     flex-direction: column;
-    box-shadow: 2px 2px 5px solid #232323;
     input, 
     .message {
         padding: 15px 30px;
@@ -37,10 +36,28 @@
     }
 }
 
+.contactSocial ul {
+    display: flex;
+    i {
+        font-size: 5rem;
+        color: $offWhite;
+    }
+}
 
-.itsMe img {
-    max-height: 600px;
-    position: absolute;
-    bottom: 0;
-    right: 5%;
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    a {
+        color: $offWhite;
+        font-size: 2rem;
+        padding: 20px 0 0 0;
+        text-transform: lowercase;
+        text-align: right;
+
+    }
+    i {
+        font-size: 2.5rem;
+    }
+    
 }

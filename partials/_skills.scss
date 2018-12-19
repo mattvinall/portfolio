@@ -5,11 +5,13 @@
         font-weight: 700;
         text-align: center;
         letter-spacing: 3px;
+        padding-top: 50px;
     }
    .skillsContainer {
        display: flex;
        flex-wrap: wrap;
        justify-content: space-between;
+       margin: 50px 0;
        li {
            padding: 15px 20px;
        }   
@@ -17,11 +19,6 @@
            font-size: 9rem;
        }
    }
-}
-
-.skills h3 {
-    padding-top: 50px;
-    text-align: center;
 }
 
 .skillsTitle {

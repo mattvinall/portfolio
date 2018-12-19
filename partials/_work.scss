@@ -1,12 +1,12 @@
 .work {
     background: #fff;
+    padding: 50px 0;
 }
 
 .projectContainer {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    margin-top: 50px;
     .project,
     .description {
         display: flex;
@@ -42,10 +42,8 @@
 
 .deviceImage {
    max-width:100%;
-    display: flex;
-    flex-direction: flex-end;
     img {
-        max-width: 550px;
+        max-width: 500px;
         margin-top: 40px;
     }
 }

@@ -185,7 +185,7 @@ h4 {
 
 p {
   font-family: 'Poppins', sans-serif;
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   line-height: 35px; }
 
 ul, li {
@@ -379,7 +379,8 @@ header {
     color: #232323;
     font-weight: 700;
     text-align: center;
-    letter-spacing: 3px; }
+    letter-spacing: 3px;
+    padding-top: 50px; }
   .skills .skillsContainer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -388,22 +389,20 @@ header {
     flex-wrap: wrap;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-    justify-content: space-between; }
+    justify-content: space-between;
+    margin: 50px 0; }
     .skills .skillsContainer li {
       padding: 15px 20px; }
     .skills .skillsContainer i {
       font-size: 9rem; }
-
-.skills h3 {
-  padding-top: 50px;
-  text-align: center; }
 
 .skillsTitle {
   text-align: center;
   padding-top: 20px; }
 
 .work {
-  background: #fff; }
+  background: #fff;
+  padding: 50px 0; }
 
 .projectContainer {
   display: -webkit-box;
@@ -411,8 +410,7 @@ header {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  width: 100%;
-  margin-top: 50px; }
+  width: 100%; }
   .projectContainer .project,
   .projectContainer .description {
     display: -webkit-box;
@@ -448,16 +446,9 @@ header {
   text-align: right; }
 
 .deviceImage {
-  max-width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: flex-end;
-  flex-direction: flex-end; }
+  max-width: 100%; }
   .deviceImage img {
-    max-width: 550px;
+    max-width: 500px;
     margin-top: 40px; }
 
 .buttonContainer {
@@ -511,9 +502,7 @@ header {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-shadow: 2px 2px 5px solid #232323;
-  box-shadow: 2px 2px 5px solid #232323; }
+  flex-direction: column; }
   .contactForm input,
   .contactForm .message {
     padding: 15px 30px;
@@ -532,30 +521,35 @@ header {
       background: #ffcc33;
       color: #1d4fa2; }
 
-.itsMe img {
-  max-height: 600px;
-  position: absolute;
-  bottom: 0;
-  right: 5%; }
+.contactSocial ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .contactSocial ul i {
+    font-size: 5rem;
+    color: #f0f0f0; }
 
-footer {
-  background: #f0f0f0;
-  padding: 25px 0; }
-
-footer h1 {
-  text-align: center;
-  padding-top: 0;
-  font-size: 3rem; }
-
-.footerSocial {
+.contactInfo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding: 0 0 15px 0; }
-  .footerSocial li {
-    padding: 0 15px; }
-  .footerSocial i {
-    font-size: 3rem; }
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
+  .contactInfo a {
+    color: #f0f0f0;
+    font-size: 2rem;
+    padding: 20px 0 0 0;
+    text-transform: lowercase;
+    text-align: right; }
+  .contactInfo i {
+    font-size: 2.5rem; }
+
+footer {
+  background: #f0f0f0;
+  padding: 25px 0;
+  text-align: center; }

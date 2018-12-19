@@ -19,7 +19,12 @@ $(function () {
         $('.menu').fadeOut("slow");
     });
     // w0w js
-    new WOW().init();
+    new WOW().init({
+        mobile: false,
+        offset: 50
+    });
     // smooth scroll
-    $('nav ul li a').smoothScroll();
+    $('nav ul li a').smoothScroll({
+        speed: 1000
+    });
 });
