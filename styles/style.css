@@ -207,8 +207,12 @@ section {
   padding: 50px 0; }
 
 .sectionHeader {
-  text-align: center;
-  letter-spacing: 3px; }
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  font-size: 5rem;
+  line-height: 22px;
+  font-weight: 700;
+  text-align: center; }
 
 .wrapper {
   max-width: 85%;
@@ -359,6 +363,12 @@ header {
   display: flex; }
   .aboutMeContainer .bio {
     padding-left: 50px; }
+    .aboutMeContainer .bio .contactMe {
+      margin-left: 0; }
+
+.buttonContainer a {
+  width: 150px;
+  text-align: center; }
 
 .imageContainer {
   -webkit-filter: drop-shadow(-50px 0 0 #f0f0f0);
@@ -369,13 +379,42 @@ header {
   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 50% 100%, 0 50%);
   width: 450px; }
 
+@media screen and (max-width: 1100px) {
+  .aboutMeContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-top: 50px; }
+    .aboutMeContainer .bio {
+      margin-top: 50px;
+      padding: 0; }
+  .imageContainer {
+    margin: auto; } }
+
+@media screen and (max-width: 700px) {
+  .bio, .buttonContainer {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center; } }
+
+@media screen and (max-width: 500px) {
+  .profileImage {
+    width: 390px; } }
+
+@media screen and (max-width: 400px) {
+  .profileImage {
+    width: 300px; } }
+
+@media screen and (max-width: 320px) {
+  .profileImage {
+    width: 280px; } }
+
 .skills {
   background: #f0f0f0; }
   .skills h3 {
-    color: #232323;
-    font-weight: 700;
     text-align: center;
-    letter-spacing: 3px;
     padding-top: 50px; }
   .skills .skillsContainer {
     display: -webkit-box;
@@ -501,10 +540,12 @@ h4.skillsTitle {
   -ms-flex-pack: end;
   justify-content: flex-end; }
 
-@media screen and (max-width: 1085px) {
+@media screen and (max-width: 1185px) {
   * {
     -webkit-transition: all 800ms ease-in;
     -moz-transition: all 800ms ease-in; }
+  .wrapper {
+    max-width: 85%; }
   .project {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -514,7 +555,8 @@ h4.skillsTitle {
       -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
       order: 1;
-      width: 600px; }
+      width: 600px;
+      margin: 0; }
     .project .description {
       -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
@@ -538,6 +580,12 @@ h4.skillsTitle {
     align-items: center; } }
 
 @media screen and (max-width: 500px) {
+  .project h3 {
+    font-size: 3rem; }
+  .project h4 {
+    font-size: 2.2rem; }
+  .project p {
+    font-size: 1.6rem; }
   .project .deviceImage img {
     max-width: 400px; } }
 
@@ -558,7 +606,8 @@ h4.skillsTitle {
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between; }
+  justify-content: space-between;
+  margin-top: 50px; }
 
 .contactForm {
   margin-top: 50px;

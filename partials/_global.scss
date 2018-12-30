@@ -51,8 +51,8 @@ section {
 }
 
 .sectionHeader {
+    @include heading(22px, 5rem, 700);
     text-align: center;
-    letter-spacing: 3px;
 }
 
 .wrapper {
