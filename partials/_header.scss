@@ -64,10 +64,10 @@ header {
 }
 
 .arrow {
-    display: flex;
-    justify-content: center;
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
     i {
-        margin-bottom: 50px;
         font-size: 5rem;
         color: $yellowAccent;
     }

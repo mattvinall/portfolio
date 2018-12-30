@@ -15,7 +15,7 @@
     }
     .description {
         display: flex;
-        width: 40%;
+        width: 50%;
         flex-direction: column;
         h3 {
             text-transform: uppercase;
@@ -33,6 +33,11 @@
         a {
             font-weight: 700;
             font-size: 1.6rem;
+            &:hover {
+                transition: 300ms ease-in;
+                color: $yellowAccent;
+
+            }
         }
     }
 }
@@ -40,13 +45,30 @@
 .radflix,
 .tasty {
     text-align: right;
+    .description {
+        padding-right: 50px;
+    }
+    img {
+        margin-right: 60px;
+    }
 }
+
+.backInTimes,
+.nerdy {
+    .description {
+        padding-left: 50px;
+    }
+    img {
+        margin-left: 60px;
+    }
+}
+
 
 .deviceImage {
    max-width:100%;
     img {
         max-width: 500px;
-        margin-top: 40px;
+        margin-top:40px;
     }
 }
 
@@ -69,4 +91,69 @@
 .flexEnd {
     display: flex;
     justify-content: flex-end;
+}
+
+
+// MEDIA QUERIES
+
+// SMALL LAPTOP - LARGE TABLET
+@media screen and (max-width: 1085px) {
+    * {
+        -webkit-transition: all 800ms ease-in;
+        -moz-transition: all 800ms ease-in;
+    }
+    .project {
+        flex-direction: column;
+        img {
+            order: 1;
+            width: 600px;
+        }
+        .description {
+            order: 2;
+            width: 100%;
+        }
+    }
+    .radflix,
+    .tasty {
+        img {
+            float: right;
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .project {
+        .deviceImage {
+            margin: auto;
+            img {
+                margin: 0;
+                max-width: 450px;
+            }
+        }
+        .description {
+            padding: 0;
+            text-align: center;
+            align-items: center;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .project {
+        .deviceImage {
+            img {
+                max-width: 400px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .project {
+        .deviceImage {
+            img {
+                max-width: 300px;
+            }
+        }
+    }
 }
