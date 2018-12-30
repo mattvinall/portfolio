@@ -98,13 +98,6 @@
 
 // SMALL LAPTOP - LARGE TABLET
 @media screen and (max-width: 1185px) {
-    * {
-        -webkit-transition: all 800ms ease-in;
-        -moz-transition: all 800ms ease-in;
-    }
-    .wrapper {
-        max-width: 85%;
-    }
     .project {
         flex-direction: column;
         img {
@@ -125,6 +118,7 @@
     }
 }
 
+// LARGE MOBILE && SMALL TABLET
 @media screen and (max-width: 700px) {
     .project {
         .deviceImage {
@@ -142,17 +136,9 @@
     }
 }
 
+
 @media screen and (max-width: 500px) {
     .project {
-        h3 {
-            font-size: 3rem;
-        }
-        h4 {
-            font-size: 2.2rem;
-        }
-        p {
-            font-size: 1.6rem;
-        }
         .deviceImage {
             img {
                 max-width: 400px;

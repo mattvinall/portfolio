@@ -215,8 +215,29 @@ section {
   text-align: center; }
 
 .wrapper {
-  max-width: 85%;
+  max-width: 80%;
   margin: 0 auto; }
+
+@media screen and (max-width: 1185px) {
+  * {
+    -webkit-transition: all 700ms ease-in;
+    -moz-transition: all 700ms ease-in; }
+  .wrapper {
+    max-width: 85%; } }
+
+@media screen and (max-width: 700px) {
+  .wrapper {
+    max-width: 90%; }
+  h3 {
+    font-size: 3rem; }
+  h4 {
+    font-size: 2.2rem; }
+  p {
+    font-size: 1.6rem; } }
+
+@media screen and (max-width: 400px) {
+  .wrapper {
+    max-width: 95%; } }
 
 header {
   background-color: #1d4fa2;
@@ -365,6 +386,9 @@ header {
     padding-left: 50px; }
     .aboutMeContainer .bio .contactMe {
       margin-left: 0; }
+  .aboutMeContainer h3 {
+    border-bottom: 2px solid #1d4fa2;
+    padding-bottom: 5px; }
 
 .buttonContainer a {
   width: 150px;
@@ -425,7 +449,8 @@ header {
     justify-content: space-between;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    margin: 25px 0; }
+    padding-top: 0;
+    padding-bottom: 0; }
     .skills .skillsContainer i {
       font-size: 8rem;
       padding: 0 15px; }
@@ -435,10 +460,21 @@ header {
       display: flex;
       -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
+    .skills .skillsContainer .row1 {
+      margin-top: 50px; }
 
 h4.skillsTitle {
   text-align: center;
-  padding-top: 20px; }
+  padding-top: 40px; }
+
+.firebaseText {
+  padding-top: 3px; }
+
+@media screen and (max-width: 655px) {
+  .row .skillsContainer {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; } }
 
 .work {
   background: #fff;
@@ -541,11 +577,6 @@ h4.skillsTitle {
   justify-content: flex-end; }
 
 @media screen and (max-width: 1185px) {
-  * {
-    -webkit-transition: all 800ms ease-in;
-    -moz-transition: all 800ms ease-in; }
-  .wrapper {
-    max-width: 85%; }
   .project {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -580,12 +611,6 @@ h4.skillsTitle {
     align-items: center; } }
 
 @media screen and (max-width: 500px) {
-  .project h3 {
-    font-size: 3rem; }
-  .project h4 {
-    font-size: 2.2rem; }
-  .project p {
-    font-size: 1.6rem; }
   .project .deviceImage img {
     max-width: 400px; } }
 
@@ -667,7 +692,35 @@ h4.skillsTitle {
     .contactInfo a:hover {
       color: #ffcc33; }
   .contactInfo i {
-    font-size: 2.5rem; }
+    font-size: 2.5rem;
+    padding: 0 10px; }
+  .contactInfo .text {
+    padding: 0 10px; }
+
+@media screen and (max-width: 875px) {
+  .contact {
+    padding: 50px 0; }
+    .contact .contactContainer {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      margin-top: 0; }
+      .contact .contactContainer .contactForm {
+        width: 100%;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; }
+      .contact .contactContainer .contactSocial ul,
+      .contact .contactContainer .contactInfo {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center; }
+        .contact .contactContainer .contactSocial ul a,
+        .contact .contactContainer .contactInfo a {
+          text-align: center; }
+      .contact .contactContainer .contactSocial ul li {
+        padding: 0 15px; } }
 
 footer {
   background: #f0f0f0;

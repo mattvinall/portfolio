@@ -8,20 +8,34 @@
        display: flex;
        justify-content: space-between;
        flex-wrap: wrap;
-       margin: 25px 0;
-       i {
+        padding-top: 0;
+        padding-bottom: 0;
+        i {
            font-size: 8rem;
            padding: 0 15px;
-       }
-       .row {
+        }
+        .row {
            display: flex;
            flex-wrap: wrap;
-       }
+        }
+        .row1 {
+            margin-top: 50px;
+        }
    }  
 }
 
-
 h4.skillsTitle {
     text-align: center;
-    padding-top: 20px;
+    padding-top: 40px;
+}
+.firebaseText {
+    padding-top: 3px;
+}
+
+// MEDIA QUERIES 
+
+@media screen and (max-width: 655px) {
+   .row .skillsContainer {
+       justify-content: center;
+   }
 }
