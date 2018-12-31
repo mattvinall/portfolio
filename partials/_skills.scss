@@ -2,40 +2,53 @@
     background: $offWhite;
     h3 {
         text-align: center;
-        padding-top: 50px;
+        padding: 50px 0;
     }
    .skillsContainer {
        display: flex;
-       justify-content: space-between;
+       justify-content: space-around;
        flex-wrap: wrap;
         padding-top: 0;
         padding-bottom: 0;
         i {
            font-size: 8rem;
-           padding: 0 15px;
         }
         .row {
            display: flex;
            flex-wrap: wrap;
         }
-        .row1 {
-            margin-top: 50px;
-        }
-   }  
+   }
+   li.skill {
+       width: 110px;
+   } 
 }
 
 h4.skillsTitle {
     text-align: center;
     padding-top: 40px;
+    font-size: 1.8rem;
 }
 .firebaseText {
     padding-top: 3px;
+    font-size: 1.8rem;
 }
 
 // MEDIA QUERIES 
 
 @media screen and (max-width: 655px) {
    .row .skillsContainer {
-       justify-content: center;
+       justify-content: space-around;
+       .skillsContainer:first-child {
+           margin-top: 50px;
+       }
    }
 }
+
+@media screen and (max-width: 400px) {
+    .row .skillsContainer {
+        justify-content: space-between;
+        .skillsContainer:first-child {
+            margin-top: 50px;
+        }
+    }
+ }

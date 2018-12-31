@@ -120,6 +120,9 @@
 
 // LARGE MOBILE && SMALL TABLET
 @media screen and (max-width: 700px) {
+    .work {
+        padding: 50px 0;
+    }
     .project {
         .deviceImage {
             margin: auto;
@@ -151,7 +154,22 @@
     .project {
         .deviceImage {
             img {
-                max-width: 300px;
+                max-width: 280px;
+            }
+        }
+        .description {
+            h4 {
+                font-size: 1.7rem;
+            }
+            p { 
+                @include text(30px, 1.6rem)
+            }
+        }
+        .buttonContainer {
+            display: flex;
+            flex-direction: column;
+            a {
+                margin: 10px 0;
             }
         }
     }

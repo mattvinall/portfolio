@@ -81,17 +81,28 @@
             .contactForm {
                 width: 100%;
                 align-items: center;
-        }
-        .contactSocial ul,
-        .contactInfo {
-            justify-content: center;
-            a {
-                text-align: center;
             }
-        }
-        .contactSocial ul li {
-            padding: 0 15px;
+            .contactSocial ul,
+            .contactInfo {
+                justify-content: center;
+                a {
+                    text-align: center;
+                }
+            }
+            .contactSocial ul li {
+                padding: 0 15px;
+            }   
         }
     }
 }
+
+@media screen and (max-width: 400px) {
+    .contactSocial ul {
+        i {
+            font-size: 4rem;
+        }
+    }
+    .text {
+        font-size: 1.8rem;
+    }
 }

@@ -1,6 +1,7 @@
 html, body {
     font-size: 62.5%;
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
 }
 
 h1, h2, h3, h4 {
@@ -81,12 +82,15 @@ section {
         font-size: 2.2rem;
     }
     p {
-        font-size: 1.6rem;
+        @include text (35px, 1.6rem);
     }
 }
 
 @media screen and (max-width: 400px) {
     .wrapper {
-        max-width: 95%;
+        width: 95%;
+    }
+    .sectionHeader {
+        @include heading(22px, 4rem, 700);
     }
 }
