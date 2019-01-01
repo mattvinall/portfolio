@@ -494,15 +494,27 @@ h4.skillsTitle {
     -ms-flex-pack: distribute;
     justify-content: space-around; }
     .row .skillsContainer .skillsContainer:first-child {
-      margin-top: 50px; } }
+      margin-top: 50px; }
+  h4.firebaseText {
+    padding-top: 0; } }
+
+@media screen and (max-width: 525px) {
+  .row {
+    width: calc(33.33% - 20px);
+    margin: 10px;
+    float: left; } }
 
 @media screen and (max-width: 400px) {
-  .row .skillsContainer {
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between; }
-    .row .skillsContainer .skillsContainer:first-child {
-      margin-top: 50px; } }
+  .row {
+    width: calc(33.33% - 10px);
+    margin: 5px;
+    float: left; } }
+
+@media screen and (max-width: 350px) {
+  .row {
+    width: calc(100% - 20px);
+    margin: 10px;
+    float: left; } }
 
 .work {
   background: #fff;
