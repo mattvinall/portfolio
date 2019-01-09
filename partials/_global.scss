@@ -1,96 +1,99 @@
-html, body {
-    font-size: 62.5%;
-    font-family: 'Poppins', sans-serif;
-    overflow-x: hidden;
+html,
+body {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 
-h1, h2, h3, h4 {
-    margin: 0;
-    padding: 0;
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
-    @include heading(22px, 3.6rem, 700);
-    padding-top: 65px;
+  @include heading(22px, 3.6rem, 700);
+  padding-top: 65px;
 }
 
 h2 {
-    @include heading(56px, 3.6rem, 700);
+  @include heading(56px, 3.6rem, 700);
 }
 
 h3 {
-    @include heading(22px, 3.6rem, 700);
+  @include heading(22px, 3.6rem, 700);
 }
 
 h4 {
-    @include heading(22px, 2.4rem, 400)
+  @include heading(22px, 2.4rem, 400);
 }
 
 p {
-    @include text(35px, 1.8rem);
+  @include text(35px, 1.8rem);
 }
 
-ul, li {
-    margin: 0;
-    padding: 0;
-    font-size: 2rem;
-    list-style: none;
-    padding: 30px 15px;
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  font-size: 2rem;
+  list-style: none;
+  padding: 30px 15px;
 }
 
 a {
-    text-decoration: none;
-    color: #333;
-    font-size: 2rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    cursor: pointer;
+  text-decoration: none;
+  color: #333;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
 section {
-    padding: 50px 0;
+  padding: 50px 0;
 }
 
 .sectionHeader {
-    @include heading(22px, 5rem, 700);
-    text-align: center;
+  @include heading(22px, 5rem, 700);
+  text-align: center;
 }
 
 .wrapper {
-    max-width: 80%;
-    margin: 0 auto;
+  max-width: 80%;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 1185px) {
-    * {
-        -webkit-transition: all 700ms ease-in;
-        -moz-transition: all 700ms ease-in;
-    }
-    .wrapper {
-        max-width: 85%;
-    }
+  * {
+    -webkit-transition: all 700ms ease-in;
+    -moz-transition: all 700ms ease-in;
+  }
+  .wrapper {
+    max-width: 85%;
+    margin: 0 auto;
+  }
 }
 
 @media screen and (max-width: 700px) {
-    .wrapper {
-        max-width: 90%;
-    }
-    h3 {
-        font-size: 3rem;
-    }
-    h4 {
-        font-size: 2.2rem;
-    }
-    p {
-        @include text (35px, 1.6rem);
-    }
+  h3 {
+    font-size: 3rem;
+  }
+  h4 {
+    font-size: 2.2rem;
+  }
+  p {
+    @include text(35px, 1.6rem);
+  }
 }
 
 @media screen and (max-width: 400px) {
-    .wrapper {
-        width: 95%;
-    }
-    .sectionHeader {
-        @include heading(22px, 4rem, 700);
-    }
+  .wrapper {
+    max-width: 90%;
+  }
+  .sectionHeader {
+    @include heading(22px, 4rem, 700);
+  }
 }

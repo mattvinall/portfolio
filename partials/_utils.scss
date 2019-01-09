@@ -5,18 +5,17 @@ $blackShade: #333;
 $yellowAccent: #ffcc33;
 $blueShade: #1d4fa2;
 
-
-// Mixins 
+// Mixins
 @mixin heading($lineHeight, $fontSize, $fontWeight) {
-    font-family: 'Poppins', sans-serif;
-    color: $blackShade;
-    font-size: $fontSize;
-    line-height: $lineHeight;
-    font-weight: $fontWeight;
+  font-family: "Monsterrat", sans-serif;
+  color: $blackShade;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  font-weight: $fontWeight;
 }
 
-@mixin text ($lineHeight, $fontSize) {
-    font-family: 'Poppins', sans-serif;
-    font-size: $fontSize;
-    line-height: $lineHeight;
+@mixin text($lineHeight, $fontSize) {
+  font-family: "Poppins", sans-serif;
+  font-size: $fontSize;
+  line-height: $lineHeight;
 }

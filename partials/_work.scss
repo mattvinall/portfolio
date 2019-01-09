@@ -1,179 +1,178 @@
 .work {
-    background: #fff;
-    padding: 100px 0;
+  background: #fff;
+  padding: 100px 0;
 }
 
 .projectContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  .project,
+  .description {
     display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    .project,
-    .description {
-        display: flex;
-        justify-content: space-evenly;
-        margin-top: 50px;
+    justify-content: space-evenly;
+    margin-top: 50px;
+  }
+  .description {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    h3 {
+      text-transform: uppercase;
+      font-weight: 700;
+      border-bottom: 2px solid $blueShade;
+      padding-bottom: 5px;
     }
-    .description {
-        display: flex;
-        width: 50%;
-        flex-direction: column;
-        h3 {
-            text-transform: uppercase;
-            font-weight: 700;
-            border-bottom: 2px solid $blueShade;
-            padding-bottom: 5px;
-        }
-        h4 {
-            font-weight: 300;
-            font-size: 2rem;
-            padding-top: 15px;
-            line-height: 30px;
-            font-style: italic;
-        }
-        a {
-            font-weight: 700;
-            font-size: 1.6rem;
-            &:hover {
-                transition: 300ms ease-in;
-                color: $yellowAccent;
-
-            }
-        }
+    h4 {
+      font-weight: 300;
+      font-size: 2rem;
+      padding-top: 15px;
+      line-height: 30px;
+      font-style: italic;
     }
+    a {
+      font-weight: 700;
+      font-size: 1.6rem;
+      &:hover {
+        transition: 300ms ease-in;
+        color: $yellowAccent;
+      }
+    }
+  }
 }
 
 .radflix,
 .tasty {
-    text-align: right;
-    .description {
-        padding-right: 50px;
-    }
-    img {
-        margin-right: 60px;
-    }
+  text-align: right;
+  .description {
+    padding-right: 50px;
+  }
+  img {
+    margin-right: 60px;
+  }
 }
 
 .backInTimes,
 .nerdy {
-    .description {
-        padding-left: 50px;
-    }
-    img {
-        margin-left: 60px;
-    }
+  .description {
+    padding-left: 50px;
+  }
+  img {
+    margin-left: 60px;
+  }
 }
 
-
 .deviceImage {
-   max-width:100%;
-    img {
-        max-width: 500px;
-        margin-top:40px;
-    }
+  max-width: 100%;
+  img {
+    max-width: 500px;
+    margin-top: 40px;
+  }
 }
 
 .buttonContainer {
-    display: flex;
-    a {
-        background: $offWhite;;
-        padding: 15px;
-        margin: 0 10px;
-        border: 2px solid $blueShade;
-        &:hover {
-            background: $blueShade;
-            transition: 200ms ease-out;
-            transform: scale(1.1);
-            color: #fff;
-        }
+  display: flex;
+  a {
+    background: $offWhite;
+    padding: 15px;
+    margin: 0 10px;
+    border: 2px solid $blueShade;
+    &:hover {
+      background: $blueShade;
+      transition: 200ms ease-out;
+      transform: scale(1.1);
+      color: #fff;
     }
+  }
 }
 
 .flexEnd {
-    display: flex;
-    justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
 }
-
 
 // MEDIA QUERIES
 
 // SMALL LAPTOP - LARGE TABLET
 @media screen and (max-width: 1185px) {
-    .project {
-        flex-direction: column;
-        img {
-            order: 1;
-            width: 600px;
-            margin: 0;
-        }
-        .description {
-            order: 2;
-            width: 100%;
-        }
+  .project {
+    flex-direction: column;
+    img {
+      order: 1;
+      width: 600px;
+      margin: 0;
     }
-    .radflix,
-    .tasty {
-        img {
-            float: right;
-        }
+    .description {
+      order: 2;
+      width: 100%;
     }
+  }
+  .radflix,
+  .tasty {
+    img {
+      float: right;
+    }
+  }
 }
 
 // LARGE MOBILE && SMALL TABLET
 @media screen and (max-width: 700px) {
-    .work {
-        padding: 50px 0;
+  .work {
+    padding: 50px 0;
+  }
+  .project {
+    .deviceImage {
+      margin: auto;
+      img {
+        margin: 0;
+        max-width: 450px;
+      }
     }
-    .project {
-        .deviceImage {
-            margin: auto;
-            img {
-                margin: 0;
-                max-width: 450px;
-            }
-        }
-        .description {
-            padding: 0;
-            text-align: center;
-            align-items: center;
-            p {
-                padding: 0 10px;
-            }
-        }
+    .description {
+      padding: 0;
+      text-align: center;
+      align-items: center;
+      p {
+        padding-right: 25px;
+      }
     }
+  }
 }
 
-
 @media screen and (max-width: 500px) {
-    .project {
-        .deviceImage {
-            img {
-                max-width: 400px;
-            }
-        }
+  .project {
+    .deviceImage {
+      img {
+        max-width: 400px;
+      }
     }
+  }
 }
 
 @media screen and (max-width: 400px) {
-    .project {
-        .deviceImage {
-            img {
-                max-width: 280px;
-            }
-        }
-        .description {
-            h4 {
-                font-size: 1.7rem;
-            }
-            p { 
-                @include text(30px, 1.6rem)
-            }
-        }
-        .buttonContainer {
-            display: flex;
-            flex-direction: column;
-            a {
-                margin: 10px 0;
-            }
-        }
+  .project {
+    .description p {
+      padding-right: 0;
     }
+    .deviceImage {
+      img {
+        max-width: 280px;
+      }
+    }
+    .description {
+      h4 {
+        font-size: 1.7rem;
+      }
+      p {
+        @include text(30px, 1.6rem);
+      }
+    }
+    .buttonContainer {
+      display: flex;
+      flex-direction: column;
+      a {
+        margin: 10px 0;
+      }
+    }
+  }
 }
