@@ -572,13 +572,13 @@ h4.skillsTitle {
         color: #ffcc33; }
 
 .radflix,
-.tasty {
+.sophie {
   text-align: right; }
   .radflix .description,
-  .tasty .description {
+  .sophie .description {
     padding-right: 50px; }
   .radflix img,
-  .tasty img {
+  .sophie img {
     margin-right: 60px; }
 
 .backInTimes .description,
@@ -640,33 +640,35 @@ h4.skillsTitle {
       order: 2;
       width: 100%; }
   .radflix img,
-  .tasty img {
+  .sophie img {
     float: right; } }
 
-@media screen and (max-width: 700px) {
-  .work {
-    padding: 50px 0; }
-  .project .deviceImage {
-    margin: auto; }
-    .project .deviceImage img {
-      margin: 0;
-      max-width: 450px; }
-  .project .description {
-    padding: 0;
+@media screen and (max-width: 750px) {
+  .wrapper {
+    max-width: 95%; }
+  .radflix,
+  .nerdy,
+  .sophie {
     text-align: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center; }
-    .project .description p {
-      padding-right: 25px; } }
+    padding-right: 0; }
+  .nerdy .description {
+    padding-left: 0; }
+  .radflix .description,
+  .sophie .description {
+    padding-right: 0; }
+  .radflix img,
+  .sophie img {
+    float: none; }
+  .flexEnd {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; } }
 
 @media screen and (max-width: 500px) {
   .project .deviceImage img {
     max-width: 400px; } }
 
 @media screen and (max-width: 400px) {
-  .project .description p {
-    padding-right: 0; }
   .project .deviceImage img {
     max-width: 280px; }
   .project .description h4 {
@@ -684,7 +686,12 @@ h4.skillsTitle {
     -ms-flex-direction: column;
     flex-direction: column; }
     .project .buttonContainer a {
-      margin: 10px 0; } }
+      margin: 10px 0; }
+  .project .flexEnd,
+  .project .buttonContainer {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; } }
 
 .contact {
   background: #1d4fa2;
@@ -770,7 +777,7 @@ h4.skillsTitle {
 
 @media screen and (max-width: 875px) {
   .contact {
-    padding: 50px 0; }
+    padding: 50px 10px; }
     .contact .contactContainer {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
