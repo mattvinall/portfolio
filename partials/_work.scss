@@ -1,6 +1,6 @@
 .work {
 	background: #fff;
-	padding: 100px 0;
+	margin: 100px 0;
 }
 
 .projectContainer {
@@ -10,7 +10,7 @@
 	.project,
 	.description {
 		display: flex;
-		justify-content: space-evenly;
+		justify-content: space-between;
 		margin-top: 50px;
 	}
 	.description {
@@ -94,7 +94,7 @@
 // MEDIA QUERIES
 
 // SMALL LAPTOP - LARGE TABLET
-@media screen and (max-width: 1185px) {
+@media screen and (max-width: 1300px) {
 	.project {
 		flex-direction: column;
 		img {
@@ -117,26 +117,38 @@
 
 // LARGE MOBILE && SMALL TABLET
 @media screen and (max-width: 750px) {
+	.work {
+		margin: 50px 0;
+	}
+	.projectContainer .project,
+	.project .description {
+		align-items: center;
+	}
 	.wrapper {
 		max-width: 95%;
+		margin: 0 auto;
 	}
 	.radflix,
 	.nerdy,
-	.sophie {
+	.sophie,
+	.backInTimes {
 		text-align: center;
 		padding-right: 0;
 	}
 
-	.nerdy .description {
+	.nerdy .description,
+	.backInTimes .description {
 		padding-left: 0;
 	}
+
 	.radflix .description,
 	.sophie .description {
 		padding-right: 0;
 	}
 
 	.radflix img,
-	.sophie img {
+	.sophie img,
+	.backInTimes img {
 		float: none;
 	}
 	.flexEnd {
