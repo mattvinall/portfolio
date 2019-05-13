@@ -730,17 +730,17 @@ h4.skillsTitle {
 }
 
 .radflix,
-.sophie {
+.mnmk9 {
   text-align: right;
 }
 
 .radflix .description,
-.sophie .description {
+.mnmk9 .description {
   padding-right: 50px;
 }
 
 .radflix img,
-.sophie img {
+.mnmk9 img {
   margin-right: 60px;
 }
 
@@ -815,7 +815,7 @@ h4.skillsTitle {
     width: 100%;
   }
   .radflix img,
-  .sophie img {
+  .mnmk9 img {
     float: right;
   }
 }
@@ -836,7 +836,7 @@ h4.skillsTitle {
   }
   .radflix,
   .nerdy,
-  .sophie,
+  .mnmk9,
   .backInTimes {
     text-align: center;
     padding-right: 0;
@@ -846,11 +846,11 @@ h4.skillsTitle {
     padding-left: 0;
   }
   .radflix .description,
-  .sophie .description {
+  .mnmk9 .description {
     padding-right: 0;
   }
   .radflix img,
-  .sophie img,
+  .mnmk9 img,
   .backInTimes img {
     float: none;
   }
