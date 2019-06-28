@@ -15,8 +15,8 @@ $(function() {
 	$('.exit-responsive').on('click', function() {
 		$('.menu').fadeOut('slow');
 	});
-	$('.navMobile.a').on('click', function() {
-		$('.menu').fadeOut('slow');
+	$('a').on('click', function() {
+		$('.menu').fadeOut('fast');
 	});
 	// w0w js
 	new WOW().init({
