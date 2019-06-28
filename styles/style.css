@@ -780,6 +780,23 @@ h4.skillsTitle {
   margin-top: 40px;
 }
 
+.deviceImage img:hover {
+  -webkit-transform: rotate(5deg);
+          transform: rotate(5deg);
+  -webkit-transition: -webkit-transform 300ms ease-in;
+  transition: -webkit-transform 300ms ease-in;
+  transition: transform 300ms ease-in;
+  transition: transform 300ms ease-in, -webkit-transform 300ms ease-in;
+  -webkit-animation: shake 800ms cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+          animation: shake 800ms cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+
 .buttonContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -863,7 +880,7 @@ h4.skillsTitle {
   }
   .nerdy .description,
   .backInTimes .description,
-  .linkMentalHealth {
+  .linkMentalHealth .description {
     padding-left: 0;
   }
   .radflix .description,

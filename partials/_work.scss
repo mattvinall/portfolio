@@ -70,6 +70,14 @@
 	img {
 		max-width: 500px;
 		margin-top: 40px;
+		&:hover {
+			transform: rotate(5deg);
+			transition: transform 300ms ease-in;
+			animation: shake 800ms cubic-bezier(.36, .07, .19, .97) both;
+			transform: translate3d(0, 0, 0);
+			backface-visibility: hidden;
+			perspective: 1000px;
+		}
 	}
 }
 
@@ -144,7 +152,7 @@
 
 	.nerdy .description,
 	.backInTimes .description,
-	.linkMentalHealth {
+	.linkMentalHealth .description {
 		padding-left: 0;
 	}
 
