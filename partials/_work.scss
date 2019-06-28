@@ -12,6 +12,7 @@
 		display: flex;
 		justify-content: space-between;
 		margin-top: 50px;
+		width: 100%;
 	}
 	.description {
 		display: flex;
@@ -42,7 +43,8 @@
 }
 
 .radflix,
-.mnmk9 {
+.mnmk9,
+.emoji {
 	text-align: right;
 	.description {
 		padding-right: 50px;
@@ -53,7 +55,8 @@
 }
 
 .backInTimes,
-.nerdy {
+.nerdy,
+.linkMentalHealth {
 	.description {
 		padding-left: 50px;
 	}
@@ -108,7 +111,8 @@
 		}
 	}
 	.radflix,
-	.mnmk9 {
+	.mnmk9,
+	.emoji {
 		img {
 			float: right;
 		}
@@ -131,18 +135,22 @@
 	.radflix,
 	.nerdy,
 	.mnmk9,
-	.backInTimes {
+	.backInTimes,
+	.emoji,
+	.linkMentalHealth {
 		text-align: center;
 		padding-right: 0;
 	}
 
 	.nerdy .description,
-	.backInTimes .description {
+	.backInTimes .description,
+	.linkMentalHealth {
 		padding-left: 0;
 	}
 
 	.radflix .description,
-	.mnmk9 .description {
+	.mnmk9 .description,
+	.emoji .description {
 		padding-right: 0;
 	}
 
@@ -174,6 +182,9 @@
 			}
 		}
 		.description {
+			h3 {
+				font-size: 2rem;
+			}
 			h4 {
 				font-size: 1.7rem;
 			}

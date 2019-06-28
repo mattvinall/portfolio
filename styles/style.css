@@ -690,6 +690,7 @@ h4.skillsTitle {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 50px;
+  width: 100%;
 }
 
 .projectContainer .description {
@@ -730,27 +731,32 @@ h4.skillsTitle {
 }
 
 .radflix,
-.mnmk9 {
+.mnmk9,
+.emoji {
   text-align: right;
 }
 
 .radflix .description,
-.mnmk9 .description {
+.mnmk9 .description,
+.emoji .description {
   padding-right: 50px;
 }
 
 .radflix img,
-.mnmk9 img {
+.mnmk9 img,
+.emoji img {
   margin-right: 60px;
 }
 
 .backInTimes .description,
-.nerdy .description {
+.nerdy .description,
+.linkMentalHealth .description {
   padding-left: 50px;
 }
 
 .backInTimes img,
-.nerdy img {
+.nerdy img,
+.linkMentalHealth img {
   margin-left: 60px;
 }
 
@@ -815,7 +821,8 @@ h4.skillsTitle {
     width: 100%;
   }
   .radflix img,
-  .mnmk9 img {
+  .mnmk9 img,
+  .emoji img {
     float: right;
   }
 }
@@ -837,16 +844,20 @@ h4.skillsTitle {
   .radflix,
   .nerdy,
   .mnmk9,
-  .backInTimes {
+  .backInTimes,
+  .emoji,
+  .linkMentalHealth {
     text-align: center;
     padding-right: 0;
   }
   .nerdy .description,
-  .backInTimes .description {
+  .backInTimes .description,
+  .linkMentalHealth {
     padding-left: 0;
   }
   .radflix .description,
-  .mnmk9 .description {
+  .mnmk9 .description,
+  .emoji .description {
     padding-right: 0;
   }
   .radflix img,
@@ -870,6 +881,9 @@ h4.skillsTitle {
 @media screen and (max-width: 400px) {
   .project .deviceImage img {
     max-width: 280px;
+  }
+  .project .description h3 {
+    font-size: 2rem;
   }
   .project .description h4 {
     font-size: 1.7rem;
