@@ -759,6 +759,12 @@ h4.skillsTitle {
   margin-right: 60px;
 }
 
+.radflix .button,
+.mnmk9 .button,
+.emoji .button {
+  margin-right: 0;
+}
+
 .backInTimes .description,
 .nerdy .description,
 .linkMentalHealth .description {
@@ -769,6 +775,12 @@ h4.skillsTitle {
 .nerdy img,
 .linkMentalHealth img {
   margin-left: 60px;
+}
+
+.backInTimes .button,
+.nerdy .button,
+.linkMentalHealth .button {
+  margin-left: 0;
 }
 
 .deviceImage {
