@@ -1,75 +1,76 @@
 .skills {
-  background: $offWhite;
-  h3 {
-    text-align: center;
-    padding: 50px 0;
-  }
-  .skillsContainer {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding-top: 0;
-    padding-bottom: 0;
-    i {
-      font-size: 8rem;
-    }
-    .row {
-      display: flex;
-      flex-wrap: wrap;
-    }
-  }
-  li.skill {
-    width: 110px;
-  }
+	background: $offWhite;
+	h3 {
+		text-align: center;
+		padding: 50px 0;
+	}
+	.skillsContainer {
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		padding-top: 0;
+		padding-bottom: 0;
+		i {
+			font-size: 8rem;
+			cursor: pointer;
+		}
+		.row {
+			display: flex;
+			flex-wrap: wrap;
+		}
+	}
+	li.skill {
+		width: 110px;
+	}
 }
 
 h4.skillsTitle {
-  text-align: center;
-  padding-top: 40px;
-  font-size: 1.8rem;
+	text-align: center;
+	padding-top: 40px;
+	font-size: 1.8rem;
 }
 .firebaseText {
-  padding-top: 3px;
-  font-size: 1.8rem;
+	padding-top: 3px;
+	font-size: 1.8rem;
 }
 
 // MEDIA QUERIES
 
 @media screen and (max-width: 655px) {
-  .row .skillsContainer {
-    justify-content: space-around;
-    .skillsContainer:first-child {
-      margin-top: 50px;
-    }
-  }
-  h4.firebaseText {
-    padding-top: 0;
-  }
+	.row .skillsContainer {
+		justify-content: space-around;
+		.skillsContainer:first-child {
+			margin-top: 50px;
+		}
+	}
+	h4.firebaseText {
+		padding-top: 0;
+	}
 }
 
 @media screen and (max-width: 525px) {
-  .row {
-    width: calc(33.33% - 20px);
-    margin: 10px;
-    float: left;
-  }
+	.row {
+		width: calc(33.33% - 20px);
+		margin: 10px;
+		float: left;
+	}
 }
 
 @media screen and (max-width: 400px) {
-  .skills h3 {
-    padding: 0;
-  }
-  .row {
-    width: calc(33.33% - 10px);
-    margin: 5px;
-    float: left;
-  }
+	.skills h3 {
+		padding: 0;
+	}
+	.row {
+		width: calc(33.33% - 10px);
+		margin: 5px;
+		float: left;
+	}
 }
 
 @media screen and (max-width: 350px) {
-  .row {
-    width: calc(100% - 20px);
-    margin: 10px;
-    float: left;
-  }
+	.row {
+		width: calc(100% - 20px);
+		margin: 10px;
+		float: left;
+	}
 }
