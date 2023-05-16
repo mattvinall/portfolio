@@ -1,15 +1,18 @@
 .aboutMeContainer {
 	margin: 100px 0;
 	display: flex;
+
 	.bio {
 		padding-left: 50px;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
+
 		.contactMe {
 			margin-left: 0;
 		}
 	}
+
 	h3 {
 		border-bottom: 2px solid $blueShade;
 		padding-bottom: 5px;
@@ -36,17 +39,20 @@
 	.aboutMeContainer {
 		flex-direction: column;
 		margin-top: 50px;
+
 		.bio {
 			margin-top: 50px;
 			padding: 0;
 		}
 	}
+
 	.imageContainer {
 		margin: auto;
 	}
 }
 
 @media screen and (max-width: 700px) {
+
 	.bio,
 	.buttonContainer {
 		justify-content: center;
