@@ -1,7 +1,8 @@
 .contact {
-	background: #1d4fa2;
+	background: #8C52FF;
 	position: relative;
 	padding: 100px 0;
+
 	h3 {
 		color: #f0f0f0;
 	}
@@ -12,11 +13,13 @@
 	justify-content: space-between;
 	margin-top: 50px;
 }
+
 .contactForm {
 	margin-top: 50px;
 	width: 50%;
 	display: flex;
 	flex-direction: column;
+
 	input,
 	.message {
 		padding: 15px 30px;
@@ -25,10 +28,12 @@
 		color: #232323;
 		font-size: 1.8rem;
 	}
+
 	.submit {
 		width: 100%;
 		background: #f0f0f0;
-		color: #1d4fa2;
+		color: #8C52FF;
+
 		&:hover {
 			transition: 300ms ease-in-out;
 			background: $yellowAccent;
@@ -39,6 +44,7 @@
 
 .contactSocial ul {
 	display: flex;
+
 	i {
 		font-size: 5rem;
 		color: $offWhite;
@@ -49,23 +55,28 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
+
 	ul li:last-child {
 		padding-right: 0;
 	}
+
 	a {
 		color: $offWhite;
 		font-size: 2rem;
 		padding: 20px 0 0 0;
 		text-transform: lowercase;
 		text-align: right;
+
 		&:hover {
 			color: $yellowAccent;
 		}
 	}
+
 	i {
 		font-size: 2.5rem;
 		padding: 0 10px;
 	}
+
 	.text {
 		@include text(22px, 20px);
 		padding: 0 10px;
@@ -75,20 +86,25 @@
 @media screen and (max-width: 875px) {
 	.contact {
 		padding: 50px 10px;
+
 		.contactContainer {
 			flex-direction: column;
 			margin-top: 0;
+
 			.contactForm {
 				width: 100%;
 				align-items: center;
 			}
+
 			.contactSocial ul,
 			.contactInfo {
 				justify-content: center;
+
 				a {
 					text-align: center;
 				}
 			}
+
 			.contactSocial ul li {
 				padding: 0 15px;
 			}
@@ -102,6 +118,7 @@
 			font-size: 4rem;
 		}
 	}
+
 	.text {
 		font-size: 1.8rem;
 	}
