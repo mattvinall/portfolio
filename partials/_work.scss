@@ -21,7 +21,7 @@
 		h3 {
 			text-transform: uppercase;
 			font-weight: 700;
-			border-bottom: 2px solid $blueShade;
+			border-bottom: 2px solid $purpleShade;
 			padding-bottom: 5px;
 		}
 		h4 {
@@ -93,9 +93,9 @@
 		background: $offWhite;
 		padding: 15px;
 		margin: 0 10px;
-		border: 2px solid $blueShade;
+		border: 2px solid $purpleShade;
 		&:hover {
-			background: $blueShade;
+			background: $purpleShade;
 			transition: 200ms ease-out;
 			transform: scale(1.1);
 			color: #fff;
@@ -150,8 +150,8 @@
 	.nerdy,
 	.mnmk9,
 	.backInTimes,
-	.emoji,
-	.linkMentalHealth {
+	.crushing-limits,
+	.mnmk9 {
 		text-align: center;
 		padding-right: 0;
 	}

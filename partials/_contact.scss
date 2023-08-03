@@ -1,5 +1,5 @@
 .contact {
-	background: #8C52FF;
+	background: $purpleShade;
 	position: relative;
 	padding: 100px 0;
 
@@ -37,7 +37,7 @@
 		&:hover {
 			transition: 300ms ease-in-out;
 			background: $yellowAccent;
-			color: $blueShade;
+			color: $purpleShade;
 		}
 	}
 }
