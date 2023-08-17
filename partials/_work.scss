@@ -134,36 +134,27 @@
 // LARGE MOBILE && SMALL TABLET
 @media screen and (max-width: 750px) {
 	.work {
-		margin: 50px 0;
+		margin: 25px 0;
 	}
 	.projectContainer .project,
 	.project .description {
 		align-items: center;
+		text-align: center;
 	}
 	.wrapper {
 		max-width: 95%;
 		margin: 0 auto;
 	}
-	.radflix,
-	.nerdy,
-	.mnmk9,
-	.backInTimes,
-	.crushing-limits,
-	.mnmk9 {
-		text-align: center;
-		padding-right: 0;
-	}
-
-	.nerdy .description,
-	.backInTimes .description,
-	.linkMentalHealth .description {
-		padding-left: 0;
-	}
-
-	.radflix .description,
-	.mnmk9 .description,
-	.emoji .description {
-		padding-right: 0;
+	.project {
+		flex-direction: column;
+		img {
+			width: 100%;
+			margin: 0;
+		}
+		.description {
+			width: 100%;
+			padding: 0 20px;
+		}
 	}
 
 	.radflix img,
